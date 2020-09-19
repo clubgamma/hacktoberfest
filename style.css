@@ -6,4 +6,105 @@
 
 body {
   overflow-x: hidden;
+  background-image: linear-gradient(rgb(0, 105, 255) 25%, hsl(220,95%,8%));
+  height: 500vh;
+  font-family: 'Work Sans', sans-serif;
 }
+
+.header {
+  height: 100vh;
+  background-color: white;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero {
+  display: flex;
+  height: 100%;
+}
+
+.header__content {
+  width: 60vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.header__content > p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.header__svg {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+}
+
+.svg-hacktoberfest {
+  width: 80%;
+}
+
+/* ------------------Waves-Start------------------ */
+.waves > div {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  background-size: 1280px 100px;
+  background: url(assets/images/wave.png);
+}
+
+.wave1 {
+  animation: moveForward 30s linear infinite;
+  z-index: 40;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave2 {
+  animation: moveBackward 15s linear infinite;
+  z-index: 30;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.wave3 {
+  animation: moveForward 25s linear infinite;
+  z-index: 20;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+.wave4 {
+  animation: moveBackward 10s linear infinite;
+  z-index: 10;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 0px;
+  height: 128px !important;
+}
+
+@keyframes moveForward {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1280px;
+  }
+}
+
+@keyframes moveBackward {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1280px;
+  }
+}
+/* ------------------Waves-End------------------ */
