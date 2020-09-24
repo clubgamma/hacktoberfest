@@ -4,68 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hacktoberfest</title>
+  <title>Hactoberfest</title>
 
-  <!-- Custom CSS file  -->
-  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Fullpage -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- fullpage.min.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Navbar -->
   <nav class="navbar">
-    <a href="http://clubgamma.github.io/" class="navbar-logo">
-      <img src="assets/images/club_gamma.png" alt="Club Gamma" />
-      <span>Club Gamma</span>
-    </a>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#QnA">Q&A</a></li>
-      <li><a href="#prizes">Prizes</a></li>
-      <li><a href="#sponsors">Sponsors</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <img src="assets/SVGs/logo.svg" alt="Club-gamma">
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#QnA">Q&A</a>
+      <a href="#prizes">Prizes</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#contact" class="btn-link">Contact</a>
+    </div>
+    <div id="menu-toggle">
+      <input type="checkbox" />
+      <span style="margin-bottom: 7px;"></span>
+      <span></span>
+      <ul id="menu">
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#QnA">
+          <li>Q&A</li>
+        </a>
+        <a href="#prizes">
+          <li>Prizes</li>
+        </a>
+        <a href="#sponsors">
+          <li>Sponsors</li>
+        </a>
+        <a href="#contact">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
   </nav>
 
+  <!-- FullPage -->
   <div id="fullPage">
 
-    <!-- Hero Section -->
-    <header class="section header">
-      <div class="hero">
-        <div class="header__content">
-          <p><strong>Hacktoberfest</strong> is a month-long celebration of open source software run by DigitalOcean in
-            partnership with GitHub and Twilio. Hacktoberfest is open to everyone in our global community! Five quality
-            pull requests must be submitted to public GitHub repositories. You can sign up anytime between October 1 and
-            October 31.</p>
+    <!-- Header -->
+    <div class="section">
+      <div class="header">
+        <div class="hero-content">
+          <p><strong style="color: black;">Hacktoberfest</strong> is a month-long
+            celebration of open source software
+            run by DigitalOcean in partnership
+            with GitHub and Twilio.
+          </p>
+          <a href="https://organize.mlh.io/events/4361-hacktoberfest-clubgamma" target="_blank" class="apply-with-mlh">
+            <img src="assets/mlh-logo-small.png" alt="MLH"> Apply with MLH
+          </a>
         </div>
-        <div class="header__svg">
-          <img src="assets/SVGs/hacktoberfest.svg" class="svg-hacktoberfest" alt="HacktoberFest" />
+        <div class="hero-svg">
+          <img src="assets/SVGs/hacktoberfest-logo.svg" alt="Hactoberfest">
         </div>
       </div>
-      <div class="waves">
-        <div class="wave1"></div>
-        <div class="wave2"></div>
-        <div class="wave3"></div>
-        <div class="wave4"></div>
-      </div>
-    </header>
+    </div> <!-- Header-end -->
 
     <!-- QnA section -->
-    <section class="section">
+    <div class="section">
       <!-- Q1 -->
       <div class="slide">
         <div class="container">
           <h1>What is open sourcing?</h1>
           <p>As we all know that there are thousands of projects and softwares whose code is available to all and anyone
             can make changes in it and also report bugs in the software/project and such softwares/projects are called
-            Open source projects.</p>
-          <p>Anyone who contributes to such open source projects are called Open source
+            Open source projects.
+            Anyone who contributes to such open source projects are called Open source
             contributors. Now that doesn't mean that you can contribute through only coding, you can also improve the
             documentation of the project, it is also an open source contribution.</p>
         </div>
@@ -75,8 +93,8 @@
         <div class="container">
           <h1>How Club Gamma is going to celebrate Hactoberfest?</h1>
           <p>Club Gamma is the community which aims to work together and grow together. We are going to celebrate the
-            Hactoberfest this year with a great enthusiasm.</p>
-          <p>We will put projects on different fields like Mobile app development, Web development etc. We will
+            Hactoberfest this year with a great enthusiasm.
+            We will put projects on different fields like Mobile app development, Web development etc. We will
             initialise
             some GitHub repo and will make them open source. Anyone can contribute to any of those projects during
             Hactoberfest and avail the cool prizes by DigitalOcean, GitHub, Twilio and Club Gamma also.</p>
@@ -90,10 +108,10 @@
         <div class="container">
           <h1>How can I participate?</h1>
           <p>Hacktoberfest is open to everyone in our global community. Whether you’re a seasoned contributor or looking
-            for projects to contribute to for the first time, you’re welcome to participate.</p>
-          <p>Pull requests can be made in any GitHub-hosted repositories/projects. As long as the project is public and
-            GitHub-hosted, your pull requests will count toward your participation.</p>
-          <p>You can sign up anytime between October 1 and October 31. Just be sure to sign up on the official
+            for projects to contribute to for the first time, you’re welcome to participate.
+            Pull requests can be made in any GitHub-hosted repositories/projects. As long as the project is public and
+            GitHub-hosted, your pull requests will count toward your participation.
+            You can sign up anytime between October 1 and October 31. Just be sure to sign up on the official
             Hacktoberfest website for your pull requests to count.</p>
         </div>
       </div>
@@ -101,11 +119,15 @@
       <div class="slide">
         <div class="container">
           <h1>What are the rules?</h1>
-          <p>To get a shirt, you must make four pull requests (PRs) between October 1–31 in any time zone. Pull requests
-            can be to any public repository on GitHub, not just the ones highlighted. The pull request must contain
-            commits you made yourself.</p>
-          <p>If a maintainer reports your pull request as spam, it will not be counted toward your participation in
-            Hacktoberfest. If a maintainer reports behavior that’s not in line with the project’s code of conduct, you
+          <p>1. To get a shirt, you must make four pull requests (PRs) between October 1–31 in any time zone. Pull
+            requests
+            can be to any public repository on GitHub, not just the ones highlighted.
+          </p>
+          <p>2. pull request must contain commits you made yourself.</p>
+          <p>3. If a maintainer reports your pull request as spam, it will not be counted toward your participation in
+            Hacktoberfest.
+          </p>
+          <p>4. If a maintainer reports behavior that’s not in line with the project’s code of conduct, you
             will be ineligible to participate. This year, the first 75,000 participants can earn a T-shirt. </p>
         </div>
       </div>
@@ -123,78 +145,82 @@
             whitespace is not</p>
         </div>
       </div>
-    </section>
+    </div> <!-- QnA-end -->
 
-    <!-- Prizes -->
+    <!-- Prizes Div -->
     <div class="section">
-      <div class="container">
-        <h1>What you'll get from Hactoberfest?</h1>
-        <p>After submitting 4 valid pull request to open source projects you will receive some awesome swags like
-          T-shirt, stickers, badges and all. And also you will become an Open Source Contributor which will enhance your
-          resume and reputation also.</p>
+      <div class="prizes">
+        <section class="p-one">
+          <h1>What you'll get from Hactoberfest?</h1>
+          <p>After submitting 4 valid pull request to open source projects you will receive some awesome swags like
+            T-shirt, stickers, badges and all. And also you will become an Open Source Contributor which will enhance
+            your resume and reputation also.</p>
+        </section>
+        <section class="p-two">
+          <img src="assets/SVGs/prizes.svg" alt="">
+        </section>
       </div>
-    </div>
+    </div><!-- Prizes Div end -->
 
-    <!-- Sponsors -->
+    <!-- Sponsers Div -->
     <div class="section">
-      <div class="container sponsors">
+      <div class="sponsers">
         <h1>Sponsors</h1>
-        <a href="https://github.com/" target="_blank" class="sponsor-logo">
-          <img src="assets/images/GitHub_Logo.png" alt="GitHub" />
-        </a>
-        <h1 class="sponsor-heading">In association with</h1>
-        <div class="sponsor-logos">
-          <a href="https://mlh.io/" target="_blank">
-            <img src="assets/SVGs/mlh-logo-color.svg" alt="MLH" />
-          </a>
-          <a href="https://www.digitalocean.com/" target="_blank">
-            <img src="assets/SVGs/DO_Logo_horizontal_white.svg" alt="Digital Ocean" />
-          </a>
-        </div>
+        <div class="underline"></div>
+        <a href="https://github.com/" target="_blank"><img src="assets/GitHub_Logo.png" alt="GitHub"></a>
+      </div>
+      <div class="in-asso-with">
+        <h1>In association with</h1>
+        <div class="underline"></div>
+        <a href="https://mlh.io/" target="_blank"><img src="assets/SVGs/mlh-logo-color.svg" alt="MLH"></a>
+        <a href="https://www.digitalocean.com/" target="_blank"><img src="assets/SVGs/DO_Logo_horizontal_black.svg"
+            alt="DigitalOcean"></a>
       </div>
     </div>
+    <!-- Sponsers Div End -->
 
     <!-- Contact -->
     <div class="section">
-      <div class="container">
+      <div class="contact">
         <h1>Contact Us</h1>
-        <div class="logos-container">
-          <a href="https://www.facebook.com/clubgamma" target="_blank">
-            <img alt="Facebook" src="assets/SVGs/social_media_logos/facebook.svg" class="contact-us-logo" />
-          </a>
-          <a href="https://twitter.com/club_gamma" target="_blank">
-            <img alt="Twitter" src="assets/SVGs/social_media_logos/twitter.svg" class="contact-us-logo" />
-          </a>
-          <a href="https://www.instagram.com/club_gamma/" target="_blank">
-            <img alt="Instagram" src="assets/SVGs/social_media_logos/instagram.svg" target="_blank"
-              class="contact-us-logo" />
-          </a>
-          <a href="https://github.com/clubgamma" target="_blank">
-            <img alt="GitHub" src="assets/SVGs/social_media_logos/github.svg" target="_blank" class="contact-us-logo" />
-          </a>
-          <a href="https://www.youtube.com/channel/UCFO_j0Kml2tT3aFgVUSYGxQ" target="_blank">
-            <img alt="YouTube" src="assets/SVGs/social_media_logos/youtube.svg" class="contact-us-logo" />
-          </a>
-          <a href="https://www.linkedin.com/company/clubgamma/" target="_blank">
-            <img alt="LinkedIn" src="assets/SVGs/social_media_logos/linkedin.svg" class="contact-us-logo" />
-          </a>
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/clubgamma" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/club_gamma" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/club_gamma/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/clubgamma" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCFO_j0Kml2tT3aFgVUSYGxQ" target="_blank"><i
+              class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/clubgamma/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>
 
-  </div> <!-- div#fullPage -->
+    <!-- Contact div end-->
 
-  <!-- Fullpage.js -->
+  </div> <!-- FullPage-end -->
+
+  <!-- Site is in beta stage -->
+  <div class="beta-modal">
+    <span>🚧 &nbsp;Site is in Beta stage&nbsp; 🚧 <strong class="close">&times;</strong></span>
+  </div>
+
+  <!-- fullpage.min.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a8eaeb85ff.js" crossorigin="anonymous"></script>
 
   <!-- Custom JS -->
   <script>
-    // Navbar
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('sticky', window.scrollY > 0);
-      console.log('scrolled');
-    });
+    // Website is in beta stage
+    window.onload = () => {
+      document.querySelector('.close').onclick = () => {
+        document.querySelector('.beta-modal').style.opacity = '0';
+      };
+      setTimeout(() => {
+        document.querySelector('.beta-modal').style.opacity = '0';
+      }, 5000);
+    }
 
     // FullPage
     new fullpage('#fullPage', {
@@ -203,10 +229,11 @@
       anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
       navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
       showActiveTooltip: true,
-      controlArrows: false,
+      controlArrows: true,
       slidesNavigation: true,
     });
   </script>
+
 </body>
 
 </html>
