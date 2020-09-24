@@ -24,9 +24,11 @@
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#QnA">Q&A</a>
+      <a href="#Projects">Projects</a>
       <a href="#prizes">Prizes</a>
       <a href="#sponsors">Sponsors</a>
-      <a href="#contact" class="btn-link">Contact</a>
+      <a href="#contact">Contact</a>
+      <!-- <a href="#contact" class="btn-link">Contact</a> -->
     </div>
     <div id="menu-toggle">
       <input type="checkbox" />
@@ -38,6 +40,9 @@
         </a>
         <a href="#QnA">
           <li>Q&A</li>
+        </a>
+        <a href="#Projects">
+          <li>Projects</li>
         </a>
         <a href="#prizes">
           <li>Prizes</li>
@@ -69,7 +74,7 @@
           </a>
         </div>
         <div class="hero-svg">
-          <img src="assets/SVGs/hacktoberfest-logo.svg" alt="Hactoberfest">
+          <img src="assets/SVGs/Logo Sponsors Light.svg" alt="Hactoberfest">
         </div>
       </div>
     </div> <!-- Header-end -->
@@ -147,12 +152,43 @@
       </div>
     </div> <!-- QnA-end -->
 
+    <!-- Projects Div -->
+    <div class="section">
+      <div class="projects">
+        <h1>Projects will be populated soon!</h1>
+        <div class="underline" style="margin: 0px auto;margin-bottom: 20px;"></div>
+        <img src="assets/SVGs/under-construction.svg" alt="Coming-soon">
+        <div class="countdown">
+          <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Projects Div END -->
+
     <!-- Prizes Div -->
     <div class="section">
       <div class="prizes">
         <section class="p-one">
-          <h1>What you'll get from Hactoberfest?</h1>
-          <p>After submitting 4 valid pull request to open source projects you will receive some awesome swags like
+          <h1>What you'll get from Hacktoberfest?</h1>
+          <p>After submitting 3 valid Pull Request(PR) to any of the project in Club Gamma organization you will
+            receive cool T-shirt and swags of Club Gamma</p>
+          <p>After submitting 4 valid Pull Request to open source projects you will receive some awesome swags like
             T-shirt, stickers, badges and all. And also you will become an Open Source Contributor which will enhance
             your resume and reputation also.</p>
         </section>
@@ -160,7 +196,43 @@
           <img src="assets/SVGs/prizes.svg" alt="">
         </section>
       </div>
-    </div><!-- Prizes Div end -->
+    </div> <!-- Prizes Div end -->
+
+    <!-- Workshop -->
+    <div class="section">
+      <div class="workshop">
+        <div class="speakers">
+          <h1>Speakers</h1>
+          <div class="speaker1">
+            <img src="./assets/speaker-ayush.jpg" alt="Ayush Bherwani">
+            <div class="speaker-details">
+              <h2>Ayush Bherwani</h2>
+              <p>Flutter Vadodara</p>
+            </div>
+          </div>
+          <div class="speaker2">
+            <img src="./assets/speaker-harsh.jpg" alt="Harsh Patel">
+            <div class="speaker-details">
+              <h2>Harsh Patel</h2>
+              <p>Club Gamma</p>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <h1>Don't know from where to start?</h1>
+          <p>Don't worry, we've got you back. We will be organizing workshop which will include how you can start
+            contributing to open-source projects.</p>
+          <br />
+          <p><strong>Date: </strong>10<sup>th</sup> October</p>
+          <p><strong>Time: </strong>4-6 PM</p>
+          <p><strong>Topic: </strong>Open Source Contribution</p>
+          <p class="mobile-only"><strong>Speakers: </strong>Ayush Bherwani, Harsh Patel</p>
+          <a href="https://organize.mlh.io/events/4361-hacktoberfest-clubgamma" target="_blank" class="apply-with-mlh">
+            <img src="assets/mlh-logo-small.png" alt="MLH"> Apply with MLH
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- Sponsers Div -->
     <div class="section">
@@ -173,11 +245,10 @@
         <h1>In association with</h1>
         <div class="underline"></div>
         <a href="https://mlh.io/" target="_blank"><img src="assets/SVGs/mlh-logo-color.svg" alt="MLH"></a>
-        <a href="https://www.digitalocean.com/" target="_blank"><img src="assets/SVGs/DO_Logo_horizontal_black.svg"
+        <a href="https://www.digitalocean.com/" target="_blank"><img src="assets/SVGs/DO_Logo_horizontal_blue.svg"
             alt="DigitalOcean"></a>
       </div>
-    </div>
-    <!-- Sponsers Div End -->
+    </div> <!-- Sponsers Div End -->
 
     <!-- Contact -->
     <div class="section">
@@ -192,10 +263,12 @@
               class="fab fa-youtube"></i></a>
           <a href="https://www.linkedin.com/company/clubgamma/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
+        <footer class="footer">
+          &copy; Club Gamma |&nbsp;
+          <a href="https://clubgamma.github.io/code-of-conduct/" target="_blank">Code of Conduct</a>
+        </footer>
       </div>
-    </div>
-
-    <!-- Contact div end-->
+    </div> <!-- Contact div end-->
 
   </div> <!-- FullPage-end -->
 
@@ -209,25 +282,37 @@
 
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/a8eaeb85ff.js" crossorigin="anonymous"></script>
-
+  <!-- Countdown JS -->
+  <script src="scripts/script.js"></script>
   <!-- Custom JS -->
   <script>
     // Website is in beta stage
     window.onload = () => {
       document.querySelector('.close').onclick = () => {
-        document.querySelector('.beta-modal').style.opacity = '0';
+        document.querySelector('.beta-modal').remove();
       };
       setTimeout(() => {
         document.querySelector('.beta-modal').style.opacity = '0';
       }, 5000);
+      setTimeout(() => {
+        document.querySelector('.beta-modal').remove();
+      }, 6500);
+    }
+
+    if (!window.location.hash && window.addEventListener) {
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          window.scrollTo(0, 0);
+        }, 0);
+      });
     }
 
     // FullPage
     new fullpage('#fullPage', {
       autoScrolling: true,
       navigation: true,
-      anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
-      navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
+      anchors: ['home', 'QnA', 'Projects', 'prizes', 'workshop', 'sponsors', 'contact'],
+      navigationTooltips: ['Home', 'Q&A', 'Projects', 'Prizes', 'Workshop', 'Sponsors', 'Contact'],
       showActiveTooltip: true,
       controlArrows: true,
       slidesNavigation: true,
