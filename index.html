@@ -22,41 +22,49 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
-    <img src="assets/SVGs/logo.svg" alt="Club-gamma">
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#QnA">Q&A</a>
-      <a href="#Projects">Projects</a>
-      <a href="#prizes">Prizes</a>
-      <a href="#sponsors">Sponsors</a>
-      <a href="#contact">Contact</a>
-      <!-- <a href="#contact" class="btn-link">Contact</a> -->
+  <nav class="nav">
+    <div class="banner">
+      <a href="#workshop"><span>Hack the Open Source</span></a>
+      <span class="line"></span>
+      <a href="#workshop"><span>Register →</span></a>
+      <strong onclick="document.querySelector('.banner').remove();" class="close"><span>&times;</span></strong>
     </div>
-    <div id="menu-toggle">
-      <input type="checkbox" />
-      <span style="margin-bottom: 7px;"></span>
-      <span></span>
-      <ul id="menu">
-        <a href="#home">
-          <li>Home</li>
-        </a>
-        <a href="#QnA">
-          <li>Q&A</li>
-        </a>
-        <a href="#Projects">
-          <li>Projects</li>
-        </a>
-        <a href="#prizes">
-          <li>Prizes</li>
-        </a>
-        <a href="#sponsors">
-          <li>Sponsors</li>
-        </a>
-        <a href="#contact">
-          <li>Contact</li>
-        </a>
-      </ul>
+    <div class="navbar">
+      <img src="assets/SVGs/logo.svg" alt="Club-gamma">
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#QnA">Q&A</a>
+        <a href="#projects">Projects</a>
+        <a href="#prizes">Prizes</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#contact">Contact</a>
+        <!-- <a href="#contact" class="btn-link">Contact</a> -->
+      </div>
+      <div id="menu-toggle">
+        <input type="checkbox" />
+        <span style="margin-bottom: 7px;"></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#home">
+            <li>Home</li>
+          </a>
+          <a href="#QnA">
+            <li>Q&A</li>
+          </a>
+          <a href="#Projects">
+            <li>Projects</li>
+          </a>
+          <a href="#prizes">
+            <li>Prizes</li>
+          </a>
+          <a href="#sponsors">
+            <li>Sponsors</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -73,7 +81,7 @@
             with GitHub and Twilio.
           </p>
           <a href="https://organize.mlh.io/events/4361-hacktoberfest-clubgamma" target="_blank" class="apply-with-mlh">
-            <img src="assets/mlh-logo-small.png" alt="MLH"> Register with MLH
+            <img src="assets/mlh-logo-small.png" alt="MLH"> Register for meetup
           </a>
         </div>
         <div class="hero-svg">
@@ -87,70 +95,83 @@
       <!-- Q1 -->
       <div class="slide">
         <div class="container">
-          <h1>What is open sourcing?</h1>
-          <p>As we all know that there are thousands of projects and softwares whose code is available to all and anyone
-            can make changes in it and also report bugs in the software/project and such softwares/projects are called
-            Open source projects.
-            Anyone who contributes to such open source projects are called Open source
-            contributors. Now that doesn't mean that you can contribute through only coding, you can also improve the
-            documentation of the project, it is also an open source contribution.</p>
+          <h1>How Club Gamma is going to celebrate Hacktoberfest?</h1>
+          <p>Club Gamma is the community which aims to work together and grow together. We are going to celebrate the
+            Hacktoberfest this year with a great enthusiasm.
+            <br class="desktop-only" />
+            We will put <strong>projects</strong> on different fields like <strong>Mobile App Development, Web
+              Development, Python, </strong> etc. We will
+            initialise
+            some <strong>GitHub Repo</strong> and will make them open source. Anyone can contribute to any of those
+            projects during
+            Hacktoberfest and avail the <strong>cool prizes</strong> by DigitalOcean, GitHub, Twilio and Club Gamma
+            also.</p>
+          <button onclick="window.open('https://github.com/', '_blank')" class="overlayLeftBtn">
+            <span>What I have to do?</span>
+          </button>
         </div>
       </div>
       <!-- Q2 -->
       <div class="slide">
         <div class="container">
-          <h1>How Club Gamma is going to celebrate Hacktoberfest?</h1>
-          <p>Club Gamma is the community which aims to work together and grow together. We are going to celebrate the
-            Hacktoberfest this year with a great enthusiasm.
-            We will put projects on different fields like Mobile app development, Web development etc. We will
-            initialise
-            some GitHub repo and will make them open source. Anyone can contribute to any of those projects during
-            Hacktoberfest and avail the cool prizes by DigitalOcean, GitHub, Twilio and Club Gamma also.</p>
-          <button onclick="window.open('https://github.com/', '_blank')" class="overlayLeftBtn">
-            <span>Check Details</span>
-          </button>
+          <h1>How can I participate?</h1>
+          <ul>
+            <li>Hacktoberfest is <strong>open to everyone</strong> in our global community. Whether you’re a seasoned
+              contributor or
+              looking for projects to contribute to for the first time, you’re welcome to participate.</li>
+            <li>Pull requests can be made in <strong>any GitHub-hosted repositories/projects.</strong></li>
+            <li>As long as the project is <strong>public</strong> and
+              GitHub-hosted, your pull requests will count toward your participation.</li>
+            <li>You can <strong>sign up</strong> anytime between October 1 and October 31. Just be sure to sign up on
+              the <strong>official
+                Hacktoberfest website</strong> for your pull requests to count.</li>
+          </ul>
         </div>
       </div>
       <!-- Q3 -->
       <div class="slide">
         <div class="container">
-          <h1>How can I participate?</h1>
-          <p>Hacktoberfest is open to everyone in our global community. Whether you’re a seasoned contributor or looking
-            for projects to contribute to for the first time, you’re welcome to participate.
-            Pull requests can be made in any GitHub-hosted repositories/projects. As long as the project is public and
-            GitHub-hosted, your pull requests will count toward your participation.
-            You can sign up anytime between October 1 and October 31. Just be sure to sign up on the official
-            Hacktoberfest website for your pull requests to count.</p>
+          <h1>What are the rules?</h1>
+          <ul>
+            <li>You have to <strong>register to official hacktoberfest website</strong> to receive hacktoberfest swags
+            </li>
+            <li>To get a shirt, you must make <strong>four pull requests</strong> (PRs) between <strong>October
+                1–31</strong> in any time zone. Pull
+              requests can be to
+              any public repository on GitHub, not just the ones highlighted.</li>
+            <li>Pull request must contain commits you made <strong>yourself.</strong></li>
+            <li>If a <strong>maintainer reports</strong> your pull request as spam, it will <strong>not be
+                counted</strong> toward your
+              participation in Hacktoberfest.</li>
+            <li>If a maintainer reports behavior that’s <strong>not in line with the project’s code of conduct</strong>,
+              you
+              will be <strong>ineligible to participate.</strong> This year, the first 75,000 participants can earn a
+              T-shirt.</li>
+            <li>Only <strong>first 30 contributors</strong> who submit 3 sucessful PR to any Club Gamma projects will
+              get Club Gamma
+              schwags.</li>
+            <li>Club Gamma swags will only be shipped <strong>inside India</strong></li>
+          </ul>
         </div>
       </div>
       <!-- Q4 -->
       <div class="slide">
         <div class="container">
-          <h1>What are the rules?</h1>
-          <p>1. To get a shirt, you must make four pull requests (PRs) between October 1–31 in any time zone. Pull
-            requests
-            can be to any public repository on GitHub, not just the ones highlighted.
-          </p>
-          <p>2. pull request must contain commits you made yourself.</p>
-          <p>3. If a maintainer reports your pull request as spam, it will not be counted toward your participation in
-            Hacktoberfest.
-          </p>
-          <p>4. If a maintainer reports behavior that’s not in line with the project’s code of conduct, you
-            will be ineligible to participate. This year, the first 75,000 participants can earn a T-shirt. </p>
-        </div>
-      </div>
-      <!-- Q5 -->
-      <div class="slide">
-        <div class="container">
           <h1>What are the standards for a pull request?</h1>
-          <p>Pull requests that are automated (e.g. scripted opening pull requests to remove whitespace/fix
-            typos/optimize images).</p>
-          <p>Pull requests that are disruptive (e.g. taking someone else's branch/commits and making a pull request).
-          </p>
-          <p>Pull requests that are regarded by a project maintainer as a hindrance vs. helping.</p>
-          <p>Something that's clearly an attempt to simply +1 your pull request count for October.</p>
-          <p>Last but not least, one pull request to fix a typo is fine, but 5 pull requests to remove a stray
-            whitespace is not</p>
+          <ul>
+            <li>Pull requests that are <strong>automated</strong> (e.g. scripted opening pull requests to remove
+              whitespace/fix
+              typos/optimize images).</li>
+            <li>Pull requests that are <strong>disruptive</strong> (e.g. taking someone else's branch/commits and making
+              a pull request).
+            </li>
+            <li>Pull requests that are regarded by a project maintainer as a <strong>hindrance</strong> vs. helping.
+            </li>
+            <li>Something that's clearly <strong>an attempt to simply +1 your pull request count</strong> for October.
+            </li>
+            <li>Last but not least, <strong>one pull request</strong> to fix a typo is fine, but <strong>5 pull
+                requests</strong> to remove a stray whitespace is not</li>
+          </ul>
         </div>
       </div>
     </div> <!-- QnA-end -->
@@ -177,7 +198,12 @@
         </div>
         <div class="details">
           <h1>Don't know from where to start?</h1>
-          <p>Don't worry, we've got you back. We will be organizing workshop which will include how you can start
+          <p>Well, What is open source? How to contribute to open source projects? Many more questions will be hitting
+            in your mind, right??
+          </p>
+          <br />
+          <p>Don't worry, we've got you back. We
+            will be organizing workshop which will include how you can start
             contributing to open-source projects.</p>
           <br />
           <p><strong>Date: </strong>10<sup>th</sup> October</p>
@@ -217,6 +243,7 @@
             </div>
           </div>
         </div>
+        <p class="info">(You can contribute between 1-31 October to win exciting prizes)</p>
       </div>
     </div> <!-- Projects Div END -->
 
@@ -225,11 +252,12 @@
       <div class="prizes">
         <section class="p-one">
           <h1>What you'll get from Hacktoberfest?</h1>
-          <p>After submitting 3 valid Pull Request(PR) to any of the project in Club Gamma organization you will
-            receive cool T-shirt and swags of Club Gamma</p>
-          <p>After submitting 4 valid Pull Request to open source projects you will receive some awesome swags like
-            T-shirt, stickers, badges and all. And also you will become an Open Source Contributor which will enhance
-            your resume and reputation also.</p>
+          <p>After submitting <strong>3 valid Pull Requests</strong> to any of the project in Club Gamma organization
+            you will
+            receive cool <strong>T-shirt</strong> and <strong>schwags</strong> of Club Gamma</p>
+          <p>After submitting <strong>4 valid Pull Requests</strong> to open source projects you will receive some
+            awesome swags like <strong>T-shirt, stickers, badges and all</strong>. And also you will become an Open
+            Source Contributor.</p>
         </section>
         <section class="p-two">
           <img src="assets/SVGs/prizes.svg" alt="">
@@ -277,7 +305,8 @@
 
   <!-- Site is in beta stage -->
   <div class="beta-modal">
-    <span>🚧 &nbsp;Site is in Beta stage&nbsp; 🚧 <strong class="close">&times;</strong></span>
+    <span>🚧 &nbsp;Site is in Beta stage&nbsp; 🚧 <strong onclick="document.querySelector('.beta-modal').remove();"
+        class="close">&times;</strong></span>
   </div>
 
   <!-- fullpage.min.js -->
@@ -291,9 +320,6 @@
   <script>
     // Website is in beta stage
     window.onload = () => {
-      document.querySelector('.close').onclick = () => {
-        document.querySelector('.beta-modal').remove();
-      };
       setTimeout(() => {
         document.querySelector('.beta-modal').style.opacity = '0';
       }, 5000);
@@ -302,20 +328,12 @@
       }, 6500);
     }
 
-    if (!window.location.hash && window.addEventListener) {
-      window.addEventListener("load", function () {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 0);
-      });
-    }
-
     // FullPage
     new fullpage('#fullPage', {
       autoScrolling: true,
       navigation: true,
-      anchors: ['home', 'QnA', 'Projects', 'prizes', 'workshop', 'sponsors', 'contact'],
-      navigationTooltips: ['Home', 'Q&A', 'Projects', 'Prizes', 'Workshop', 'Sponsors', 'Contact'],
+      anchors: ['home', 'QnA', 'workshop', 'projects', 'prizes', 'sponsors', 'contact'],
+      navigationTooltips: ['Home', 'Q&A', 'Workshop', 'Projects', 'Prizes', 'Sponsors', 'Contact'],
       showActiveTooltip: true,
       controlArrows: true,
       slidesNavigation: true,
