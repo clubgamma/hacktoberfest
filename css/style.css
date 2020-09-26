@@ -752,6 +752,10 @@ body {
     left: 48% !important;
   }
 
+  .slide .container {
+    width: 70vw;
+  }
+
   .slide h1 {
     font-size: 1.3rem;
     text-align: center;
@@ -760,14 +764,41 @@ body {
 
   .slide p {
     font-size: 1rem;
-    width: 80%;
+    width: 100%;
     line-height: 1.2rem;
-    text-align: start;
+    text-align: center;
     text-justify: inter-word;
   }
 
+  .slide .container ul li {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide .rules {
+    width: 80vw;
+  }
+
+  .slide .rules h1 {
+    padding-bottom: 0;
+  }
+
+  .slide .rules p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .slide .rules ul li {
+    font-size: 0.9rem;
+  }
+
+  .projects {
+    height: 85vh;
+  }
+
   .projects h1 {
-    margin-top: 40px;
+    margin-top: 0;
     font-size: 1.5rem;
     line-height: 1.6rem;
     padding-bottom: 8px;
