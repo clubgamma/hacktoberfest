@@ -106,7 +106,7 @@
             projects during
             Hacktoberfest and avail the <strong>cool prizes</strong> by DigitalOcean, GitHub, Twilio and Club Gamma
             also.</p>
-          <button onclick="window.open('https://github.com/', '_blank')" class="overlayLeftBtn">
+          <button onclick="document.querySelector('#instructionsModal').style.display='block'" class="overlayLeftBtn">
             <span>What I have to do?</span>
           </button>
         </div>
@@ -209,10 +209,10 @@
             will be organizing workshop which will include how you can start
             contributing to open-source projects.</p>
           <br />
-          <p><strong>Date: </strong>10<sup>th</sup> October</p>
-          <p><strong>Time: </strong>4-6 PM</p>
-          <p><strong>Topic: </strong>Open Source Contribution</p>
-          <p class="mobile-only"><strong>Speakers: </strong>Ayush Bherwani, Harsh Patel</p>
+          <p class="info"><strong>Date:</strong> 10<sup>th</sup> October</p>
+          <p class="info"><strong>Time:</strong> 4-6 PM</p>
+          <p class="info"><strong>Topic:</strong> Open Source Contribution</p>
+          <p class="mobile-only info"><strong>Speakers:</strong> Ayush Bherwani, Harsh Patel</p>
           <a href="https://organize.mlh.io/events/4361-hacktoberfest-clubgamma" target="_blank" class="apply-with-mlh">
             <img src="assets/mlh-logo-small.png" alt="MLH"> Register with MLH
           </a>
@@ -312,6 +312,21 @@
         class="close">&times;</strong></span>
   </div>
 
+  <!-- What I have to do modal -->
+  <div id="instructionsModal">
+    <div class="modal-content">
+      <span onclick="document.querySelector('#instructionsModal').style.display='none'" class="close">&times;</span>
+      <ul>
+        <li>Submit <strong>3 Pull Requests</strong> to any of the projects of Club Gamma to receive cool <strong>T-shirt
+            and schwags</strong> of Club
+          Gamma</li>
+        <li>Submit <strong>4 Pull Requests</strong> to open-source projects to receive schwags like <strong>T-shirt,
+            stickers, badges</strong> and all.
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <!-- fullpage.min.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
 
@@ -329,6 +344,13 @@
       setTimeout(() => {
         document.querySelector('.beta-modal').remove();
       }, 6500);
+    }
+
+    // What I have to do?
+    window.onclick = event => {
+      if (event.target === document.querySelector('#instructionsModal')) {
+        document.querySelector('#instructionsModal').style.display = 'none';
+      }
     }
 
     // FullPage

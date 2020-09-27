@@ -495,6 +495,17 @@ body {
   margin: 24px auto;
 }
 
+.details .info {
+  margin: 10px 0;
+}
+
+.details .info strong {
+  background-color: black;
+  color: white;
+  padding: 2px 12px;
+  border-radius: 5px;
+}
+
 /*---------------- Workshop-end -----------------*/
 
 /* --------------- Sponsers-div ---------------- */
@@ -636,6 +647,52 @@ body {
   right: -36px;
   top: -12px;
   font-size: 2rem;
+  cursor: pointer;
+}
+
+/* -----------------Instructions Modal-----------------*/
+#instructionsModal {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  padding-top: 40vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#instructionsModal .modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  padding-left: 32px;
+  border: 1px solid #888;
+  width: 35vw;
+  border-radius: 7px;
+}
+
+#instructionsModal .close {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#instructionsModal ul li {
+  margin: 5px 0;
+}
+
+#instructionsModal .close:hover,
+#instructionsModal .close:focus {
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -916,5 +973,13 @@ body {
   .footer a {
     color: cyan;
     text-decoration: none;
+  }
+
+  #instructionsModal {
+    padding-top: 28vh;
+  }
+
+  #instructionsModal .modal-content {
+    width: 90vw;
   }
 }
