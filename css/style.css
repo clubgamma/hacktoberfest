@@ -104,8 +104,9 @@ body {
 .navbar > .nav-links > a.btn-link {
   padding: 10px 15px;
   color: #ffffff;
-  background-color: black;
+  background-color: #183D5D;
   border-radius: 7px;
+  font-weight: 900;
 }
 
 /*------------- Menu -------------*/
