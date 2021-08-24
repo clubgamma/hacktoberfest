@@ -109,6 +109,62 @@ body {
   font-weight: 900;
 }
 
+/* ------stats----------------- */
+
+.titleDiv{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  gap: 50px;
+  font-weight: bold;
+}
+.statFlex{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+}
+
+.titleDiv img{
+  height: 60px;
+  width: 60px;
+}
+
+.statsNumbers{
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #e9005d;
+}
+.statCard{
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 300px;
+  font-size: 18px;
+  background-color: #ffeef5;
+  color: #e9005d;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  padding: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statCard:hover{
+  background-color: #ffe3ef;
+  /* border-style:solid;
+  border-width: 1.5px;
+  border-color: #9C4668; */
+}
+
 /*------------- Menu -------------*/
 #menu-toggle {
   display: none;
@@ -741,6 +797,120 @@ body {
   cursor: pointer;
 }
 
+/* -----------------clubSwag Modal-----------------*/
+#clubSwag {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  padding-top: 5vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#clubSwag .modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 85vh;
+  border-radius: 7px;
+}
+
+#clubSwag .close {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+#clubSwag .close:hover,
+#clubSwag .close:focus {
+  color: rgb(133, 124, 124);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imageDiv{
+  margin: 20px;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swagImage{
+  margin: 5px 0px;
+  height: 550px;
+}
+
+
+
+/* -----------------hack Modal-----------------*/
+#hackSwag {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  padding-top: 5vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#hackSwag .modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 85vh;
+  border-radius: 7px;
+}
+
+#hackSwag .close {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+#hackSwag .close:hover,
+#hackSwag .close:focus {
+  color: rgb(133, 124, 124);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imageDiv{
+  margin: 20px;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swagImage{
+  margin: 5px 0px;
+  height: 550px;
+}
+
 /* -------------------- Full Page --------------------*/
 .fp-controlArrow.fp-prev {
   border-color: transparent black transparent transparent !important;
@@ -781,6 +951,51 @@ body {
 /* ==================== Media Queries ==================== */
 
 @media (max-width: 888px) {
+
+  .titleDiv{
+    font-size: 23px;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .titleDiv img{
+    height: 30px;
+    width: 30px;
+  }
+
+  .statsNumbers{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #ff5c9d;
+  }
+
+  .statFlex{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .statCard{
+    height: 130px;
+    width: 250px;
+    font-size: 16px;
+    padding: 0px;
+  }
+
+
+  /* .swagImage{
+    height: 80%;
+    width: 100%;
+  }
+
+  #hackSwag {
+    width: 90%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.7);
+  } */
+
+
   .banner .line {
     margin: 0 8px;
   }
@@ -803,6 +1018,8 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+
 
   .hero-content {
     width: 100vw;
@@ -1015,7 +1232,6 @@ body {
     flex-direction: column-reverse;
     height: 90vh;
   }
-
   .speakers {
     display: none;
   }
@@ -1127,5 +1343,34 @@ body {
 
   #instructionsModal .modal-content {
     width: 90vw;
+  }
+
+  #hackSwag {
+    padding-top: 7vh;
+  }
+
+  #hackSwag .modal-content {
+    width: 90vw;
+  }
+
+  #clubSwag {
+    padding-top: 7vh;
+  }
+
+  #clubSwag .modal-content {
+    width: 90vw;
+  }
+
+
+  .swagImage{
+    margin: 5px 0px;
+    height: 400px;
+    width: 90%;
+  }
+
+  .clubImage{
+    margin: 5px 0px;
+    height: 400px;
+    width: 90%;
   }
 }
