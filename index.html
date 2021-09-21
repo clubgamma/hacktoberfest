@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- fullpage.min.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
 </head>
@@ -24,9 +25,9 @@
   <!-- Navbar -->
   <nav class="nav">
     <div class="banner">
-      <a><span>Hacktoberfest 2021 coming soon!</span></a>
+      <a><span>Hacktoberfest 2021 starting soon!</span></a>
       <span class="line"></span>
-      <a><span>Register →</span></a>
+      <a href="https://hacktoberfest.digitalocean.com/"><span>Register →</span></a>
       <strong onclick="document.querySelector('.banner').remove();" class="close"><span>&times;</span></strong>
     </div>
     <div class="navbar">
@@ -83,15 +84,20 @@
     <div class="section">
       <div class="header">
         <div class="hero-content">
-          <p><strong style="color: black;">Hacktoberfest</strong> is a month-long
+          <p><strong style="color: #2B3531;">Hacktoberfest</strong> is a month-long
             celebration of open source software
             run by DigitalOcean in partnership
             with GitHub and Twilio every year in the month of October.
           </p>
-          <a 
-            class="apply-with-mlh">
-            <img src="assets/mlh-logo-small.png" alt="MLH"> Register for meetup
+
+          <div class="box-1">
+            <a href="https://hacktoberfest.digitalocean.com/">
+            <div class="btn btn-one" >
+              <p>REGISTER HERE</p>
+            </div>
           </a>
+          </div>
+
         </div>
         <div class="hero-svg">
           <img src="assets/SVGs/Logo Sponsors Light.svg" alt="Hacktoberfest">
@@ -219,18 +225,18 @@
     <div class="section">
       <div class="workshop">
         <div class="speakers">
-          <h1>Speakers</h1>
-          <div class="speaker1">
-            <img src="./assets/speaker-ayush.jpg" alt="Ayush Bherwani">
+          <h1>Speaker</h1>
+          <!-- <div class="speaker1">
+            <img src="./assets/speaker-ayush.jpg" alt="Aryan">
             <div class="speaker-details">
               <h2>Ayush Bherwani</h2>
               <p>Flutter Vadodara</p>
             </div>
-          </div>
+          </div> -->
           <div class="speaker2">
             <img src="./assets/speaker-harsh.jpg" alt="Harsh Patel">
             <div class="speaker-details">
-              <h2>Harsh Patel</h2>
+              <h2>Aryan Kadiya</h2>
               <p>Club Gamma</p>
             </div>
           </div>
@@ -245,17 +251,18 @@
             will be organizing workshop which will include how you can start
             contributing to open-source projects.</p>
           <br />
-          <p class="info"><strong>Date:</strong> 10<sup>th</sup> October</p>
+          <p class="info"><strong>Date:</strong> 25<sup>th</sup> September</p>
           <p class="info"><strong>Time:</strong> 4-6 PM</p>
-          <p class="info"><strong>Topic:</strong> Open Source Contribution</p>
-          <p class="mobile-only info"><strong>Speakers:</strong> Ayush Bherwani, Harsh Patel</p>
-          <a 
+          <p class="info"><strong>Topic:</strong> Guide for Open Source</p>
+          <p class="mobile-only info"><strong>Speaker:</strong>Aryan Kadiya</p>
+          <!-- <a 
             class="apply-with-mlh">
             <img src="assets/mlh-logo-small.png" alt="MLH"> Register with MLH
-          </a>
+          </a> -->
         </div>
       </div>
-    </div> <!-- Workshop-end -->
+    </div> 
+    <!-- Workshop-end -->
 
     <!-- Projects Div -->
     <div class="section">
@@ -580,14 +587,14 @@
         <section class="p-one">
           <h1>What you'll get from Hacktoberfest?</h1>
 
-      <p><strong>Exclusive Club gamma
-          <a onclick="document.querySelector('#clubSwag').style.display='block'" style="cursor: pointer; color: #c42d69;">
+      <!-- <p><strong>Exclusive Club gamma
+          <a onclick="document.querySelector('#clubSwag').style.display='block'" style="cursor: pointer; color: #B53A25;">
             T-shirts and schwag
           </a>
         </strong> (3 valid PRs on our projects)
-          </p>
+          </p> -->
           <p><strong>Hacktoberfest 
-            <a onclick="document.querySelector('#hackSwag').style.display='block'" style="cursor: pointer; color: #c42d69;">
+            <a onclick="document.querySelector('#hackSwag').style.display='block'" style="cursor: pointer; color: #B53A25;">
               T-shirts and stickers
             </a>
             </strong> (4 valid PRs on any open-source projects)
@@ -616,7 +623,6 @@
       <div class="in-asso-with">
         <h1>In association with</h1>
         <div class="underline"></div>
-        <a href="https://mlh.io/" target="_blank"><img src="assets/SVGs/mlh-logo-color.svg" alt="MLH"></a>
         <a href="https://www.digitalocean.com/" target="_blank"><img src="assets/SVGs/DO_Logo_horizontal_blue.svg"
             alt="DigitalOcean"></a>
       </div>
@@ -645,10 +651,10 @@
   </div> <!-- FullPage-end -->
 
   <!-- Site is in beta stage -->
-  <div class="beta-modal">
+  <!-- <div class="beta-modal">
     <span>🚧 &nbsp;Site is in Beta stage&nbsp; 🚧 <strong onclick="document.querySelector('.beta-modal').remove();"
         class="close">&times;</strong></span>
-  </div>
+  </div> -->
 
   <!-- What I have to do modal -->
   <div id="instructionsModal">
