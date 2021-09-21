@@ -127,15 +127,15 @@ div[class*=box] {
   }
   30% {
     background-color: #B53A25;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   70% {
     background-color: #677662;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   100% {
     background-color: #2B3531;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
 }
 
@@ -159,9 +159,9 @@ div[class*=box] {
 .banner .close {
   position: absolute;
   right: 16px;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -1064,6 +1064,11 @@ div[class*=box] {
 
 @media (max-width: 888px) {
 
+.btn-one{
+  font-size:12px;
+}
+
+
   .titleDiv{
     font-size: 23px;
     margin-top: 20px;
@@ -1107,7 +1112,9 @@ div[class*=box] {
     background-color: rgba(0,0,0,0.7);
   } */
 
-
+  .banner a{
+    font-size: 12px;
+  }
   .banner .line {
     margin: 0 8px;
   }
