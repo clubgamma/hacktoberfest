@@ -716,6 +716,28 @@ div[class*=box] {
   border-radius: 5px;
 }
 
+
+.workshopbutton {
+  background-color: #677662;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  padding: 5px 15px;
+  border: solid #000000 2px;
+  border-radius: 5px;
+  transition: all ease 250ms;
+}
+
+.workshopbutton:hover {
+  background-color: #B53A25;
+  color: #ffffff;
+  box-shadow: 0px 0px 60px -25px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+
+
+
 /*---------------- Workshop-end -----------------*/
 
 /* --------------- Sponsers-div ---------------- */
